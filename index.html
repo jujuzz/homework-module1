@@ -4,24 +4,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Great Cliffs of California</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Embed Style Method-->
+    <style>
+        /* Header */
+        header {
+            width: 100%;
+            min-height: 400px;
+            padding-top: 3em;
+        }
+        #home header{
+            background: no-repeat lightgrey url(images/cliff_ocean.jpg);
+            background-size: 1500px;
+        }
+        .main-header {
+            background-color: rgb(255, 255, 255, 0.8);
+            width: 700px;
+            margin: 2em auto 0 auto;
+            min-height: 100px;
+            height:100px;
+        }
+        .main-header .logo img {
+            width: 100px;
+            height:100px;
+            margin: 0 2em 0 0;
+            float:left;
+        }
+        /* Navigation */
+        .main-menu {
+            margin-left: 227px;
+            font-weight: 400;
+        }
+        .main-menu ul li {
+            list-style-type: none;
+            display: inline-block;
+            float: left;
+            padding-left: 25px;
+            padding-right: 25px;
+            border-left:1px solid rgba(202, 204, 202, 0.6);
+            line-height: 100px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .main-menu ul li a {
+            text-decoration: none;
+            color:#888;
+        }
+        .main-menu ul li a:hover {
+            text-decoration: none;
+            color:#9ed034;
+        }
+        .main-menu ul li.active {
+            background:#9ed034;
+            border: none;
+        }
+        .main-menu ul li.active a {
+            color:#fff;
+        }
+        /* Main */
+        main {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main h2 {
+            color:#9ed034;
+        }
+        /* Partners */
+        section {
+            width: 100%;
+            background-color: #4288c3;
+        }
+        section #partners {
+            width: 1200px;
+            padding: 2em 0 2em 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+        section #partners .partner {
+            display: inline-block;
+            margin: 0 0.75em;
+            padding: 1.3em 1.5em;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        section #partners .partner img {
+            width: 90px;
+            height: 90px;
+        }
+        /* Footer */
+        footer {
+            width: 100%;
+            height: 155px;
+            padding-bottom: 1em;
+            background-color: #ecfab8;
+        }
+        footer #nondisclaimer .copy {
+            padding: 3.5em 3.5em 3.5em 13em;
+            float:left;
+            font-size: 0.9em;
+        }
+        footer #nondisclaimer .social {
+            padding: 2.5em;
+            margin-right: 9.25em;
+            float:right;
+        }
+        footer #disclaimer {
+            clear:both;
+        }
+        footer #disclaimer p {
+            font-size: 0.85em;
+            text-align: center;
+        }
+        footer #nondisclaimer .social .fa {
+            padding: 15px;
+            font-size: 15px;
+            width: 15px;
+            text-align: center;
+            text-decoration: none;
+            margin: 0 4px;
+            border-radius: 50%;
+        }
+        footer #nondisclaimer .social .fa:hover {
+            opacity: 0.7;
+        }
+        footer #nondisclaimer .social .fa-facebook {
+            background: #3b5998;
+            color: white;
+        }
+        footer #nondisclaimer .social .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+        footer #nondisclaimer .social .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+    </style>
 </head>
-<body>
+<body id="home">
     <div id="container">
         <header>
-        <img src="images/cliff_ocean.jpg" alt="Ocean View Cliff" width="1280" height="564">
             <div class="main-header">
                 <div class="logo">
                     <img src="images/logo.png" alt="Great GreatCliffs Logo" width="125">
                 </div>
-                <div class="mian-menu">
+                <nav class="main-menu">
                     <ul>
-                        <li>Home</li>
+                        <li class="active"><a href="index.html">Home</a></li>
                         <li>Cliffs</li>
-                        <li>Events</li>
-                        <li>Contact</li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </header>
         
@@ -36,22 +170,22 @@
         <section>
             <ul id="partners">
                 <li class="partner">
-                    <h3>Partner 1 Image</h3>
+                    <h3><img src="images/partners/partner-bustour.png" alt="Partner Bus Tour"></h3>
                 </li>
                 <li class="partner">
-                    <h3>Partner 2 Image</h3>
+                    <h3><img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental"></h3>
                 </li>
                 <li class="partner">
-                    <h3>Partner 3 Image</h3>
+                    <h3><img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure"></h3>
                 </li>
                 <li class="partner">
-                    <h3>Partner 4 Image</h3>
+                    <h3><img src="images/partners/partner-collegetours.png" alt="Partner College Tours"></h3>
                 </li>
                 <li class="partner">
-                    <h3>Partner 5 Image</h3>
+                    <h3><img src="images/partners/partner-rentalbike.png" alt="Partner Rental Bike"></h3>
                 </li>
                 <li class="partner">
-                    <h3>Partner 6 Image</h3>
+                    <h3><img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group"</h3>
                 </li>
             </ul>
         </section>
@@ -59,12 +193,12 @@
         <footer>
             <div id="nondisclaimer">
                 <div class="copy">
-                    &copy;Copyright 2021 :: GreatCliffs.com
+                    &copy; Copyright 2021 :: GreatCliffs.com
                 </div>
                 <div class="social">
-                    <h3>Facebook Image</h3>
-                    <h3>Instagram Image</h3>
-                    <h3>Twitter Image</h3>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
                 </div>
             </div>
             <div id="disclaimer">
