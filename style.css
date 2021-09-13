@@ -36,7 +36,7 @@ header {
 .main-menu ul li {
     list-style-type: none;
     display: inline-block;
-    float: left;
+    float:left;
     padding-left: 25px;
     padding-right: 25px;
     border-left:1px solid rgba(202, 204, 202, 0.6);
@@ -166,11 +166,86 @@ th:first-child{
     background-color: #4977D1;
     color:white;
     width:125px;
-    height:50px;
-    
+    height:50px;  
 }
 td:first-child{
     background-color: #BDE1FF;
-    font-weight:bold;
-    
+    font-weight:bold; 
+}
+/*Contact*/
+.contactinfo span:first-child{
+    font-weight: bold;
+}
+form{
+    margin-top: 15px; 
+}
+legend{
+    text-transform: uppercase;
+    color: #4977D1;
+    font-weight: bold;
+}
+fieldset{
+    border:2px solid #9ed034;
+}
+label{
+    font-weight: bold;
+    font-size: 15px;
+    margin-left:25px;
+}
+.textbox label{
+    display:block;
+    margin-top: 10px;
+}
+.radios{
+    margin-top: 15px;
+}
+.radios label {
+    display: inline;
+}
+.selectmenu{
+    margin-top: 15px;
+}
+
+.selectmenu label{
+    display:inline;
+}
+input{
+    margin-left: 25px; 
+}
+
+.textbox input{
+    width:390px;
+}
+.commentbox label{
+    display: block;
+    margin-top: 15px;
+}
+textarea{
+    width:400px;
+    height: 180px;
+    margin-left: 25px;
+}
+input[type="submit"]{
+    width:120px;
+    height:40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 310px;
+    background-color: #4977D1;
+    color:white;
+    font-weight: bold;
+    font-size: medium;
+}
+select{
+    width:150px;
+    text-align-last: center;
+}
+#contact main h1{
+    color: #9ed034;
+}
+#contact main p{
+    margin:30px auto 30px auto; 
+}
+.email{
+    margin-top: 10px;
 }
