@@ -87,8 +87,6 @@
             var sec = d.getSeconds();//get current seconds 0-59
             var ampm;//declare empty variable to store AM or PM
             var hr12;
-
-            //adding a time zone to the clock
             var utchr = d.getUTCHours();
             var timeDiff = utchr - hr24;
             var adjTimeDiff;
@@ -113,8 +111,6 @@
                 hr12 = hr24;
                 ampm = "AM";
             }
-            console.log("timeDiff:", timeDiff)
-
             //ensure timediff is positive
             if (timeDiff < 0) {
                 adjTimeDiff = timeDiff * -1;
