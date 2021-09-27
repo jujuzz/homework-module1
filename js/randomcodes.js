@@ -24,7 +24,6 @@ function disableButton(btnvalue) {
     }
 }
 
-
 var codebox = document.getElementById("codeentered");
 codebox.addEventListener("input", evaluateCode);
 
