@@ -77,35 +77,20 @@
                         <label>How did you hear about us:</label>  
                         <textarea></textarea>
                     </div>
-                
+                    <!--Random Codes-->
+                    <div class="randomcode">
+                        <input type="text" name="randomcode" placeholder="Enter Character">
+                        <p id="codes"></p>
+                    </div>
                     <div class="button">
                         <input type="submit" value="Inquire">
                     </div> 
-                </fieldset>  
+                </fieldset>
             </form>
         </main>
 
         <section>
-            <ul id="partners">
-                <!-- <li class="partner">
-                    <img src="images/partners/partner-bustour.png " alt="partner bus tour">
-                </li>
-                <li class="partner">
-                    <img src="images/partners/partner-cabinrental.png " alt="partner cabin rental">
-                </li>
-                <li class="partner">
-                    <img src="images/partners/partner-campingadv.png " alt="partner camping adventure">
-                </li>
-                <li class="partner">
-                    <img src="images/partners/partner-collegetours.png " alt="partner college tours">
-                </li>
-                <li class="partner">
-                    <img src="images/partners/partner-rentalbike.png " alt="part bike rental">
-                </li>
-                <li class="partner">
-                    <img src="images/partners/partner-tourgroup.png " alt="partner tour group">
-                </li> -->
-            </ul>
+            <ul id="partners"></ul>
         </section>
 
         <footer>
@@ -125,24 +110,7 @@
         </footer>
         
     </div>
-    <script>
-        // convert from HTML to JavaScript to display partner images
-        var attr = ["partner bus tour","partner cabin rental","partner camping adventure","partner college tours","part bike rental","partner tour group"];
-        var fileNames = [];
-        var photos = [];
-        var openList = "<li class='partner'>"; 
-        var closeList = "</li>";
-        var image;
-        var imageList = [];
 
-        for (var i = 0; i < 6; i++){
-            fileNames.push("partner" + (i + 1));
-            photos.push("<img src='images/partners/" + fileNames[i] + ".png' alt='" + attr[i] + "'>");
-            image = openList + photos[i] + closeList;
-            imageList.push(image);  
-        }
-        document.getElementById("partners").innerHTML = imageList.join('');
-    
-    </script>
+    <script src="js/site_scripts.js"></script>
 </body>
 </html>
