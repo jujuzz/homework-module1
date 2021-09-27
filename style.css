@@ -184,6 +184,20 @@ td:first-child{
 form{
     margin-top: 15px; 
 }
+form .randomcode {
+    margin: 15px 0 0 165px;
+}
+form .randomcode input {
+    width: 10em;
+    height: 1.5em;
+    font-weight: bold;
+}
+form #codes {
+    display: inline;
+    font-weight: bold;
+    background-color: lightsalmon;
+    padding: 11px;
+}
 legend{
     text-transform: uppercase;
     color: #4977D1;
