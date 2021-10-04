@@ -177,6 +177,13 @@ td:first-child {
     background-color: #BDE1FF;
     font-weight:bold; 
 }
+.highlighted{
+    cursor: pointer;
+    font-weight:bold;
+    color: white;
+    background-color:#9ed034;
+}
+
 /* Contact */
 .contactinfo span:first-child {
     font-weight: bold;
