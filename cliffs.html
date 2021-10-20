@@ -5,30 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body id="cliffs">
-    <div id="container">
+    <div id="container-fluid">
         <header>
-            <div class="main-header">
-                <div class="logo">
-                    <img src="images/logo.png" alt="Great GreatCliffs Logo" width="125">
-                </div>
-                <nav class="main-menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active"><a href="cliffs.html">Cliffs</a></li>
-                        <li><a href="activities.html">Activities</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+            <div class="main-header sticky-top">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
+                    </div>
+                    <button 
+                        class = "navbar-toggler navbar-toggler-right" 
+                        type = "button" 
+                        data-toggle = "collapse" 
+                        data-target = "#navbarNavDropdown" 
+                        aria-controls = "navbarNavDropdown" 
+                        aria-expanded = "false" 
+                        aria-label = "Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class = "collapse navbar-collapse" id = "navbarNavDropdown">
+                        <div class="main-menu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class = "nav-link text-white" href="index.html">Home</a></li>
+                                <li class="nav-item active"><a class = "nav-link text-white" href="cliffs.html">Cliffs</a></li>
+                                <li class="nav-item"><a class = "nav-link text-white" href="activities.html">Activities</a></li>
+                                <li class="nav-item"><a class = "nav-link text-white" href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
 
         <main>
-            <h2>California's Greatest Cliffs</h2>
+            <h1>California's Greatest Cliffs</h1>
             <p>The greatest cliffs are these four cliffs located in southern California. Each of these cliffs have their own uniqueness and beauty: West Cliff, North Cliff, East Cliff and South Cliff are the pride of California. Each cliff has many amenities to offer visitors such as recreational areas, camping sites, wildlife watch spots and overnight cabins.</p>
             <p>No matter which direction you head from Irvine, California, the sites are easily reached within a 100 mile radius. West Cliff is the most popular among Westcliff University campus students because of its close proximity.</p>
                 
@@ -49,9 +63,10 @@
                     <p>South Cliff</p>
                     <img src="images/cliff-south-canyon.jpeg" alt="south" width="367">
                 </div>
+                
             </div>
+    
         </main>
-
         <section>
             <ul id="partners"></ul>
         </section>
@@ -59,7 +74,7 @@
         <footer>
             <div id="nondisclaimer">
                 <div class="copy">
-                    &copy; Copyright 2020 :: GreatCliffs.com
+                    &copy;Copyright 2021 :: GreatCliffs.com
                 </div>
                 <div class="social">
                     <a a href="#" class="fa fa-facebook"></a>
@@ -71,9 +86,12 @@
                 <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
             </div>
         </footer>
-
     </div>
 
-    <script src="js/site_scripts.js"></script>
+<script src="js/site_scripts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
 </body>
 </html>
